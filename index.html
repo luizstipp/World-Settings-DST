@@ -15,29 +15,39 @@
 <body>
     <div class="container">
 
+        <!-- Imagem central -->
+        <div class="image-container">
+			<img id="mainImage" src="img/A-1-1.png" alt="Imagem inicial" onclick="openFullScreen(this)">
+        </div>
+
         <!-- Botões de Tipo -->
         <div class="tipo-buttons">
             <button id="tipoA" class="tipo-btn active">Surface</button>
             <button id="tipoB" class="tipo-btn">Cave</button>
         </div>
 
-        <!-- Imagem central -->
-        <div class="image-container">
-            <!--  <img id="imagemCentral" src="img/A-1-1.png" alt="Imagem selecionada">  -->
-			<img id="mainImage" src="img/A-1-1.png" alt="Imagem inicial" onclick="openFullScreen(this)">
-        </div>
-
         <!-- Scrollbars -->
-        <div class="scrollbars">
-            <div class="scrollbar">
-                <label for="nivel1">Nível 1 (1-4):</label>
-                <input type="range" id="nivel1" min="1" max="4" value="1">
-            </div>
-            <div class="scrollbar">
-                <label for="nivel2">Nível 2 (1-3):</label>
-                <input type="range" id="nivel2" min="1" max="3" value="1">
-            </div>
-        </div>
+		<div class="scrollbars">
+
+			<!-- Primeiro grupo: BRANCHES -->
+			<div class="scrollbar-group">
+				<div class="scrollbar-label-title">BRANCHES</div>
+				<div class="scrollbar">
+					<label for="nivel1">Nev | Least | Def | Most</label>
+					<input type="range" id="nivel1" min="1" max="4" value="3">
+				</div>
+			</div>
+
+			<!-- Segundo grupo: LOOPS -->
+			<div class="scrollbar-group">
+				<div class="scrollbar-label-title">LOOPS</div>
+				<div class="scrollbar">
+					<label for="nivel2">Never | Default | Always</label>
+					<input type="range" id="nivel2" min="1" max="3" value="2">
+				</div>
+			</div>
+
+		</div>
 
     </div>
 

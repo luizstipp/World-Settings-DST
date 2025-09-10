@@ -19,21 +19,14 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 12px;
+    padding: 10px 40px;
+    border-radius: 2px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* Título */
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
 }
 
 /* Botões de tipo */
 .tipo-buttons {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tipo-btn {
@@ -56,22 +49,14 @@ h1 {
 
 /* Container da imagem */
 .image-container {
-    margin-bottom: 20px;
-}
-
-#imagemCentral {
-    max-width: 400px; /* ajuste conforme suas imagens */
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 #mainImage {
     display: block;
     margin: 0 auto;         /* Centraliza horizontalmente */
-    max-width: 90vw;        /* até 90% da largura da tela */
-    max-height: 80vh;       /* até 80% da altura da tela */
+    max-width: 88vw;        /* até 90% da largura da tela */
+    max-height: 82vh;       /* até 80% da altura da tela */
     object-fit: contain;    /* mantém proporção da imagem */
     cursor: pointer;        /* mostra que é clicável */
 }
@@ -95,20 +80,48 @@ h1 {
     color: #555;
 }
 
+/* Grupo de scrollbar com título extra */
+.scrollbar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Primeira linha de título (ex: BRANCHES / LOOPS) */
+.scrollbar-label-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 0.95rem; /* ajuste opcional para caber bem */
+}
+
+/* Segunda linha de título (ex: Nev | Least | Def | Most) */
+.scrollbar-label-subtitle {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+}
+
 input[type="range"] {
     width: 150px;
 }
 
 /* Opcional: estilizar a barra de rolagem */
-input[type="range"]::-webkit-slider-thumb {
-    background: #4CAF50;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+/* Barra horizontal */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;               /* altura da linha */
+    background: #ccc;           /* cor da linha */
+    border-radius: 4px;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-    height: 6px;
-    background: #ccc;
-    border-radius: 3px;
+/* “Bola” do slider */
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;                /* tamanho da bola */
+    height: 20px;
+    background: #4CAF50;        /* cor da bola */
+    border-radius: 50%;
+    margin-top: -6px;           /* centraliza verticalmente na linha */
+    cursor: pointer;
+    border: none;
 }
