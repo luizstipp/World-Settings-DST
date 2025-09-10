@@ -42,3 +42,14 @@ nivel2.addEventListener("input", atualizarImagem);
 
 // Inicializa a imagem
 atualizarImagem();
+
+// Função para ampliar a imagem
+function openFullScreen(element) {
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.webkitRequestFullscreen) { // Safari
+        element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) { // IE/Edge antigo
+        element.msRequestFullscreen();
+    }
+}

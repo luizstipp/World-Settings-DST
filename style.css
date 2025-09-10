@@ -67,6 +67,15 @@ h1 {
     border-radius: 8px;
 }
 
+#mainImage {
+    display: block;
+    margin: 0 auto;         /* Centraliza horizontalmente */
+    max-width: 90vw;        /* até 90% da largura da tela */
+    max-height: 80vh;       /* até 80% da altura da tela */
+    object-fit: contain;    /* mantém proporção da imagem */
+    cursor: pointer;        /* mostra que é clicável */
+}
+
 /* Scrollbars */
 .scrollbars {
     display: flex;
