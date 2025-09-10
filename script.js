@@ -3,7 +3,7 @@ const tipoA = document.getElementById("tipoA");
 const tipoB = document.getElementById("tipoB");
 const nivel1 = document.getElementById("nivel1");
 const nivel2 = document.getElementById("nivel2");
-const imagemCentral = document.getElementById("imagemCentral");
+const mainImage = document.getElementById("mainImage");
 
 // Variável para guardar o tipo atual (A ou B)
 let tipoAtual = "A";
@@ -18,7 +18,7 @@ function atualizarImagem() {
     const caminho = `img/${tipoAtual}-${n1}-${n2}.png`;
 
     // Atualiza a imagem central
-    imagemCentral.src = caminho;
+    mainImage.src = caminho;
 }
 
 // Funções para trocar tipo
