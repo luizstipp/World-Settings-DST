@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Botões de tipo */
+.tipo-buttons {
+    margin-bottom: 20px;
+}
+
+.tipo-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tipo-btn.active,
+.tipo-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Container da imagem */
+.image-container {
+    margin-bottom: 20px;
+}
+
+#imagemCentral {
+    max-width: 400px; /* ajuste conforme suas imagens */
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Scrollbars */
+.scrollbars {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollbar label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="range"] {
+    width: 150px;
+}
+
+/* Opcional: estilizar a barra de rolagem */
+input[type="range"]::-webkit-slider-thumb {
+    background: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #ccc;
+    border-radius: 3px;
+}
